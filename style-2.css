@@ -1,0 +1,59 @@
+/* body {
+    background: linear-gradient(100deg, #071E3D, #278EA5, #21E6C1);
+    background-size: 100% 200%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+} */
+/* #title{
+    height: 380px;
+    margin-top: 200px;
+} */
+h2{
+    /* Fallback: Set a background color. */
+    background-color: #278EA5;
+    /* Create the gradient. */
+    background-image: linear-gradient(100deg, #071E3D, #278EA5, #21E6C1);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+h3{
+    color: #21E6C1;
+}
+p{
+    color: #071E3D;
+}
+#footer{
+    color: #071E3D;
+}
+#title{
+    height: 380px;
+    margin-top: 100px;
+}
+.nav-item{
+    color: #071E3D;
+    --bs-nav-link-hover-color: #21E6C1;
+}
+.accordion-button{
+    --bs-accordion-active-bg: none;
+    --bs-accordion-active-color: #21E6C1;
+    --bs-accordion-btn-color: #071E3D;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+.col>img{
+    --bs-border-radius: 50%;
+    width: 25rem;
+}
+
+.list{
+    display: block;
+    padding-inline-start: 1.5ch;
+    margin-bottom: 0.25rem;
+    line-height: 1.6;
+}

@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(100deg, #071E3D, #278EA5, #21E6C1);
+    background-size: 130% 200%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+h1{
+    color: #EEEEEE;
+}
+#title{
+    height: 380px;
+    margin-top: 200px;
+}
+.btn-outline-dark{
+    border-color: #21E6C1;
+    border-top: #071E3D;
+    border-bottom: #071E3D;
+}
+.btn-outline-dark:hover{
+    background-color: #278EA5;
+    border-color: #278EA5;
+    border-top: #071E3D;
+    border-bottom: #071E3D;
+}
+#footer{
+    color: #278EA5;
+}
+.border-bottom{
+    border-color: #21E6C1;
+}
+p{
+    color: #278EA5;
+}
+.top{
+    display: grid;
+    place-items: center;
+}
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .025em solid #21E6C1; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   
+    animation: 
+      typing 3.5s steps(40, end) ,
+      blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #21E6C1; }
+}
