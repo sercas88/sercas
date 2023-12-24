@@ -32,6 +32,7 @@ a{
 .nav-item{
     color: #071E3D;
     --bs-nav-link-hover-color: #21E6C1;
+    transition: all .7s;
 }
 .accordion-button{
     --bs-accordion-active-bg: none;
@@ -49,4 +50,53 @@ a{
     padding-inline-start: 1.5ch;
     margin-bottom: 0.25rem;
     line-height: 1.6;
+}
+.card-text{
+    color:rgba(33, 37, 41, 0.75);
+}
+.card{
+    /* border-bottom-left-radius: 0px; */
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: #21E6C1;
+    /* background-color: rgb(235, 235, 235); */
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background: linear-gradient(300deg, #071E3D, #278EA5, #21E6C1);
+    background-size: 130% 200%;
+    animation: gradient 5s ease infinite;
+    border-radius: 2%;
+}
+.card:hover .overlay {
+    opacity: 1;
+    
+    transform: scale(1.03); 
+}
+.card-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.card-text {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
