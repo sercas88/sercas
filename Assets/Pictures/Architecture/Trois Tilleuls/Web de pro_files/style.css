@@ -1,0 +1,85 @@
+body{
+    background: #FFD369;
+}
+.fs-4{
+    font-weight: bold;
+    color: #222831;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    filter: drop-shadow(5px 15px 15px #393E46);
+    color: #222831;
+    background-image: linear-gradient(
+        -225deg,
+        #EEEEEE 0%,
+        #393E46 29%,
+        #393E46 67%,
+        #EEEEEE 100%
+      );
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 10s linear infinite;
+}
+@keyframes textclip {
+    to {
+    background-position: 200% center;
+    }
+}
+h2{
+    color: #222831;
+}
+.display-1 {
+    font-size: 8rem;
+}
+.nav-link{
+    color: #393E46;
+    font-size: small;
+}
+.card-link{
+    color: #FFD369;
+}
+.slogan{
+    color: #393E46;
+}
+/* .top{
+    display: grid;
+    place-items: center;
+} */
+#about{
+    background-color: #EEEEEE;
+}
+.card{
+    background-color: #393E46;
+    filter: drop-shadow(5px 5px 5px #222831);
+    border-color: #EEEEEE50;
+    border-width: 1px;
+}
+#pricing{
+    background-color: #EEEEEE;
+}
+.pricing-card{
+    background-color: #EEEEEE;
+    border-color: #393E46;
+    border-width: 1px;
+}
+.plan{
+    color: #8b8f94;;
+}
+.fixed-top{
+    background: #FFD369;
+}
+@media only screen and (min-width: 900px) {
+    #hero {
+      margin-top: 180px;
+    }
+}
+.btn-secondary:hover{
+    background-color: #FFD369;
+    border-color: #FFD369;
+    color: #222831;
+}
+#contact{
+    background-color: #EEEEEE;
+}
